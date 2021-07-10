@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/* Variables */
+:root {
+  --primary-text-color: hsl(210, 10%, 33%);
+  --secondry-text-color: hsl(201, 11%, 66%);
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --white: #fff;
+}
+/* Variables */
+
+/* Base stlyes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 35px;
+  border: 0;
+  border-radius: 35px;
+  font-size: 15px;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-cyan {
+  background-color: var(--cyan);
+  color: var(--white);
+  box-shadow: 0px 3px hsla(171, 91%, 30%, 0.884), 0 0 10px 0 hsl(171, 66%, 44%);
+}
+.btn-blue {
+  background-color: var(--light-blue);
+  color: var(--white);
+  box-shadow: 0px 3px rgba(17, 45, 253, 0.884), 0 0 10px 0 hsl(233, 100%, 69%);
+}
+/* buttons */
+
+/* Texts */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-text-color);
+}
+
+.text-secondry {
+  color: var(--secondry-text-color);
+}
+/* Texts */
+
+/* row */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Section title */
+.section-title {
+  max-width: 680px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.section-title h1 {
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+
+.section-title p {
+  margin: 0 0 20px;
+}
